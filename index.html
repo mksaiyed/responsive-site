@@ -8,29 +8,42 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<div class="header-section" id="header-section">
-			<div id="nav-bar" class="nav-bar">
-				<div class="nav-logo">
-					<img src="/Assets/logo.png" alt="logo" id="logo" />
-					<img src="/Assets/logo-active.png" alt="logo" id="logo-active" />
-				</div>
-				<ul>
-					<li><a href="#header-section"> Intro</a></li>
-					<li><a href="#service-section">Service</a></li>
-					<li><a href="#">Team</a></li>
-					<li><a href="#">Pricing</a></li>
-					<li id="signup">Sign Up</li>
-				</ul>
-			</div>
-			<img src="/Assets/header.jpg" alt="header-img" id="header-img" />
+		<!-- Navigation Block -->
+		<nav id="nav-bar" class="nav-bar">
+			<img src="/Assets/logo.png" alt="logo" id="logo" class="logo" />
+			<img
+				id="menu-icon"
+				src="/Assets/icons/white_menu_icon.png"
+				alt="Menu"
+				onclick="on_menu_icon_click()"
+			/>
+			<ul id="menu">
+				<li><a href="#header-section"> Intro</a></li>
+				<li><a href="#service-section">Service</a></li>
+				<li><a href="#">Team</a></li>
+				<li><a href="#">Pricing</a></li>
+				<li id="signup">Sign Up</li>
+				<li class="up-icon" onclick="on_up_icon_click();">
+					<img id="up-icon-img" src="/Assets/icons/up_icon.png" alt="Menu" />
+				</li>
+			</ul>
+		</nav>
+
+		<!-- Header Section -->
+		<section class="header-section" id="header-section">
+			<!-- Background Image  -->
+			<div id="header-img"></div>
+			<!-- Heading text -->
 			<div class="heading">
 				<h2>Take care of your body</h2>
-				<h2 id="typing">It's the only place you have to live.</h2>
+				<div id="typing">It's the only place you have to live.</div>
 			</div>
-		</div>
+		</section>
 
-		<div class="card-section">
-			<div class="table-1">
+		<!-- Tables Cards Section -->
+		<section class="card-section">
+			<!-- Table-1 -->
+			<div class="table-1 table">
 				<p>
 					<span>Today's Schedule</span>
 					<span class="symbol">&#9632; &#9633; &#9633;</span>
@@ -45,7 +58,8 @@
 					Cardio <span class="time">8:30 - 10:00</span>
 				</p>
 			</div>
-			<div class="table-2">
+			<!-- Table-2 -->
+			<div class="table-2 table">
 				<p>
 					<span>Premium Membership</span>
 					<span class="symbol">&#9633; &#9632; &#9633;</span>
@@ -53,7 +67,8 @@
 				<p class="large">Register today</p>
 				<p class="large">20% Discount</p>
 			</div>
-			<div class="table-3">
+			<!-- Table-3 -->
+			<div class="table-3 table">
 				<p>
 					<span>Happy clients</span>
 					<span class="symbol">&#9633; &#9633; &#9632;</span>
@@ -61,16 +76,20 @@
 				<p>I couldn't be more happy with the results!</p>
 				<p>Adam Jordan</p>
 			</div>
-		</div>
+		</section>
 
-		<div class="service-section" id="service-section">
+		<!-- Service Cards Section -->
+		<section class="service-section" id="service-section">
+			<!-- Heading -->
 			<div>
 				<h1>Services</h1>
 				<h2>
 					Achieve the best results with our wide variety of training options.
 				</h2>
 			</div>
+			<!-- Cards -->
 			<div class="service-cards">
+				<!-- Card 1 -->
 				<div class="card1 card">
 					<div class="card-logo">
 						<img src="/Assets/icons/heart-blue.png" alt="icon" />
@@ -84,6 +103,7 @@
 						</p>
 					</div>
 				</div>
+				<!-- Card 2 -->
 				<div class="card2 card">
 					<div class="card-logo">
 						<img src="/Assets/icons/guru-blue.png" alt="icon" />
@@ -97,6 +117,7 @@
 						</p>
 					</div>
 				</div>
+				<!-- Card 3 -->
 				<div class="card3 card">
 					<div class="card-logo">
 						<img src="/Assets/icons/weight-blue.png" alt="icon" />
@@ -111,15 +132,15 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 
-		<div class="footer">
-			<!-- <div></div> -->
+		<!-- Footer Section -->
+		<section class="footer">
 			<p>
 				Copyright &#9400; 2021 All Rights Reserved by
 				<a href="https://github.com/mksaiyed" target="_blank">MohammadKaiF</a>.
 			</p>
-		</div>
+		</section>
 
 		<script src="script.js"></script>
 	</body>
