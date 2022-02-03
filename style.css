@@ -1,19 +1,19 @@
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 @font-face {
-	font-family: font_awesome;
-	src: url(/Assets/fonts/font-awesome-4.1.0/fonts/fontawesome-webfont.woff);
+  font-family: font_awesome;
+  src: url(/Assets/fonts/font-awesome-4.1.0/fonts/fontawesome-webfont.woff);
 }
 
 body {
-	width: 100vw;
-	box-sizing: border-box;
-	overflow-x: hidden;
-	font-family: "font_awesome", sans-serif;
-	/* display: flex;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "font_awesome", sans-serif;
+  /* display: flex;
 	flex-direction: column; */
 }
 
@@ -22,26 +22,26 @@ Header Section
 *******************************************/
 
 #header-section {
-	width: 100vw;
-	height: 95vh;
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	flex-direction: column;
-	align-items: center;
+  width: 100vw;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 #header-img {
-	position: absolute;
-	width: 100vw;
-	height: 120vh;
-	background-image: url("/Assets/header.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	z-index: -1;
-	transform: skewY(-2deg);
-	transform-origin: left;
+  position: absolute;
+  width: 100vw;
+  height: 120vh;
+  background-image: url("/Assets/header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  transform: skewY(-2deg);
+  transform-origin: left;
 }
 
 /* ----- heading ----- */
@@ -57,53 +57,53 @@ Header Section
 } */
 
 .heading {
-	color: #fff;
+  color: #fff;
 }
 
 #typing {
-	font-size: 40px;
-	font-weight: bold;
-	overflow: hidden;
-	/* align-self: center;
+  font-size: 40px;
+  font-weight: bold;
+  overflow: hidden;
+  /* align-self: center;
 	display: flex;
 	flex-wrap: wrap;
 	margin: auto; */
-	white-space: nowrap;
-	animation: typing 6s steps(40) forwards, blink 0.7s step-end infinite;
-	/* animation: typing 6s steps(40) forwards infinite, blink 0.7s step-end infinite; */
-	border-right: 5px solid #00a8ff;
+  white-space: nowrap;
+  animation: typing 6s steps(40) forwards, blink 0.7s step-end infinite;
+  /* animation: typing 6s steps(40) forwards infinite, blink 0.7s step-end infinite; */
+  border-right: 5px solid #00a8ff;
 }
 
 @keyframes typing {
-	from {
-		width: 0;
-	}
-	to {
-		width: 100%;
-	}
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes blink {
-	from,
-	to {
-		border-color: transparent;
-	}
-	50% {
-		border-color: #00a8ff;
-	}
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #00a8ff;
+  }
 }
 
 /********************************************
 Header Section 
 *******************************************/
 @media only screen and (max-width: 600px) {
-	.heading h2 {
-		font-size: 10px;
-	}
+  .heading h2 {
+    font-size: 10px;
+  }
 
-	#typing {
-		font-size: 20px;
-	}
+  #typing {
+    font-size: 20px;
+  }
 }
 
 /********************************************
@@ -111,20 +111,20 @@ Nav Bar Section
 *******************************************/
 
 nav {
-	position: fixed;
-	top: 0;
-	width: 100vw;
-	display: flex;
-	justify-content: space-around;
-	/* position: relative;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  /* position: relative;
 	margin: 0 auto; */
 }
 
 #logo {
-	width: 65px;
-	height: 45px;
-	background-size: cover;
-	margin: 23px;
+  width: 65px;
+  height: 45px;
+  background-size: cover;
+  margin: 23px;
 }
 
 /* #logo-active {
@@ -140,65 +140,65 @@ nav {
 } */
 
 nav ul {
-	display: flex;
-	list-style-type: none;
-	text-decoration: none;
-	margin: 16px;
-	/* float: right;
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+  margin: 16px;
+  /* float: right;
 	justify-content: end; */
 }
 
 nav li {
-	padding: 20px;
-	font-size: 1.2rem;
-	text-align: center;
+  padding: 20px;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 nav a {
-	text-decoration: none;
-	color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 nav a:hover {
-	color: #00a8ff;
-	cursor: pointer;
+  color: #00a8ff;
+  cursor: pointer;
 }
 
 #signup {
-	background-color: #00a8ff;
-	cursor: pointer;
-	padding: 15px;
-	margin: 5px;
-	font-size: 1.2rem;
-	border-radius: 2px;
-	text-align: center;
-	color: #fff;
+  background-color: #00a8ff;
+  cursor: pointer;
+  padding: 15px;
+  margin: 5px;
+  font-size: 1.2rem;
+  border-radius: 2px;
+  text-align: center;
+  color: #fff;
 }
 
 .sticky {
-	position: fixed;
-	top: 0;
-	width: 100vw;
-	/* width: 65%; */
-	background-color: #fff;
-	color: #888;
-	box-shadow: 0px 15px 10px -15px #111;
-	z-index: 5;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  /* width: 65%; */
+  background-color: #fff;
+  color: #888;
+  box-shadow: 0px 15px 10px -15px #111;
+  z-index: 5;
 }
 
 .sticky a {
-	color: #888;
+  color: #888;
 }
 .up-icon {
-	display: none;
+  display: none;
 }
 
 #menu-icon {
-	display: none;
-	margin: auto 0;
-	margin-right: 25px;
-	height: 20px;
-	width: 25px;
+  display: none;
+  margin: auto 0;
+  margin-right: 25px;
+  height: 20px;
+  width: 25px;
 }
 
 /******************************************** 
@@ -206,64 +206,64 @@ Nav bar Section Mobile
 *******************************************/
 
 @media only screen and (max-width: 900px) {
-	nav {
-		justify-content: space-between;
-	}
+  nav {
+    justify-content: space-between;
+  }
 
-	#menu-icon {
-		display: block;
-	}
+  #menu-icon {
+    display: block;
+  }
 
-	#menu-icon:hover {
-		cursor: pointer;
-		transform: scale(1.2);
-	}
+  #menu-icon:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
 
-	#logo {
-		margin-right: auto;
-		margin-left: 20px;
-	}
+  #logo {
+    margin-right: auto;
+    margin-left: 20px;
+  }
 
-	nav ul {
-		display: none;
-		position: fixed;
-		top: 0;
-		background-color: #fff;
-		color: #888;
-		width: 100%;
-		height: 100vh;
-		z-index: 5;
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		overflow: auto;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
+  nav ul {
+    display: none;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    color: #888;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-	nav a {
-		color: #888;
-	}
+  nav a {
+    color: #888;
+  }
 
-	nav ul li {
-		display: flex;
-	}
+  nav ul li {
+    display: flex;
+  }
 
-	#signup {
-		background-color: #00a8ff;
-		color: #fff;
-	}
+  #signup {
+    background-color: #00a8ff;
+    color: #fff;
+  }
 
-	.up-icon {
-		display: flex;
-		background-color: #00a8ff;
-		padding: 15px;
-		width: 100%;
-		justify-content: center;
-		position: fixed;
-		bottom: 0;
-	}
+  .up-icon {
+    display: flex;
+    background-color: #00a8ff;
+    padding: 15px;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+  }
 }
 
 /******************************************** 
@@ -271,51 +271,51 @@ Table Cards Section
 *******************************************/
 
 .card-section {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .card-section div {
-	margin: 10px;
-	width: 280px;
-	height: 280px;
-	color: #fff;
+  margin: 10px;
+  width: 280px;
+  height: 280px;
+  color: #fff;
 }
 
 .card-section .table-1 {
-	background: url(/Assets/table-1.jpg);
+  background: url(/Assets/table-1.jpg);
 }
 
 .card-section .table-2 {
-	background: url(/Assets/table-2.jpg);
+  background: url(/Assets/table-2.jpg);
 }
 
 .card-section .table-3 {
-	background: url(/Assets/table-3.jpg);
+  background: url(/Assets/table-3.jpg);
 }
 
 .card-section div {
-	display: flex;
-	flex-direction: column;
-	padding: 10px;
-	box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .card-section div p {
-	margin: 8px 0;
-	font-weight: bold;
-	display: flex;
-	justify-content: space-between;
+  margin: 8px 0;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
 }
 
 .table-1 p:first-child {
-	margin-bottom: 80px;
-	font-size: 1.2rem;
+  margin-bottom: 80px;
+  font-size: 1.2rem;
 }
 
 .border-bottom {
-	padding-bottom: 10px;
-	border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #fff;
 }
 
 /* .table-1 .time {
@@ -323,22 +323,22 @@ Table Cards Section
 } */
 
 .table-2 p:first-child {
-	margin-bottom: 110px;
-	font-size: 1.2rem;
+  margin-bottom: 110px;
+  font-size: 1.2rem;
 }
 
 .large {
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .table-3 p:first-child {
-	margin-bottom: 80px;
-	font-size: 1.2rem;
+  margin-bottom: 80px;
+  font-size: 1.2rem;
 }
 
 .table-3 p:nth-child(2) {
-	margin-bottom: 50px;
-	font-size: 1.3rem;
+  margin-bottom: 50px;
+  font-size: 1.3rem;
 }
 
 /* .symbol {
@@ -350,17 +350,17 @@ Table Cards Section Mobile
 *******************************************/
 
 @media only screen and (max-width: 900px) {
-	.card-section {
-		width: 100%;
-		height: auto;
-		margin-top: -3vh;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
+  .card-section {
+    width: 100%;
+    height: auto;
+    margin-top: -3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-	/* .table {
+  /* .table {
 		width: 230px;
 		height: 230px;
 		display: block;
@@ -379,89 +379,90 @@ Table Cards Section Mobile
 Service Cards Section 
 *******************************************/
 .service-section {
-	/* margin-left: 20%; */
-	/* width: 60%; */
-	margin: 15% 0 10% 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+  /* margin-left: 20%; */
+  /* width: 60%; */
+  margin: 15% 0 10% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .service-section h2 {
-	color: #888;
+  color: #888;
 }
 
 .service-cards {
-	margin-top: 7%;
-	display: flex;
+  margin-top: 7%;
+  display: flex;
 }
 
 .service-cards > div {
-	border: 1px solid #c8c8c8;
-	border-radius: 5px;
-	margin: 0px 10px;
-	width: 280px;
-	height: 280px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+  margin: 0px 10px;
+  width: 280px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card-content > p {
-	display: none;
+  display: none;
 }
 
 .card-logo img {
-	width: 50px;
-	height: 50px;
-	background-color: #fff;
-	padding: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  padding: 10px;
 }
 
 .card-content h3 {
-	margin-top: 30px;
+  margin-top: 30px;
 }
 
 .service-cards > div:hover {
-	border: 1px solid #00a8ff;
-	cursor: pointer;
+  border: 1px solid #00a8ff;
+  cursor: pointer;
 }
 
 .service-cards > div:hover .card-content p {
-	margin: 10px 5px 0 5px;
-	display: block;
+  margin: 10px 5px 0 5px;
+  display: block;
 }
 
 .service-cards > div:hover .card-content {
-	animation: visible 0.5s ease-in-out;
+  animation: visible 0.7s linear;
+  transition: 0.7s linear;
 }
 
 .card {
-	transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
 
 .service-cards > div .card-logo {
-	transition: 0.9s ease-in-out;
+  transition: 0.9s linear;
 }
 
 .service-cards > div .card-content {
-	transition: 0.6s ease-in-out;
+  transition: 0.6s linear;
 }
 
 @keyframes visible {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .service-cards > div:hover .card-logo {
-	margin-top: -125px;
-	transition: 0.7s ease-in-out;
+  margin-top: -125px;
+  transition: 0.7s linear;
 }
 
 /******************************************** 
@@ -469,53 +470,53 @@ Service Cards Section Mobile
 *******************************************/
 
 @media only screen and (max-width: 900px) {
-	.service-cards {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
+  .service-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-	.service-cards .card {
-		margin-top: 8%;
-	}
+  .service-cards .card {
+    margin-top: 12%;
+  }
 
-	.card {
-		width: 250px;
-		height: 250px;
-		background: #fff;
-		border: 1px solid rgba(168, 168, 168, 0.315);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		overflow: visible;
-	}
+  .card {
+    width: 250px;
+    height: 250px;
+    background: #fff;
+    border: 1px solid rgba(168, 168, 168, 0.315);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+  }
 
-	.card-logo img {
-		width: 50px;
-		height: 50px;
-		background-color: #fff;
-		padding: 10px;
-	}
+  .card-logo img {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    padding: 10px;
+  }
 }
 
 /******************************************** 
 Footer Section  
 *******************************************/
 .footer {
-	margin-top: 70px;
-	text-align: center;
+  margin-top: 70px;
+  text-align: center;
 }
 
 .footer p {
-	background-color: #888;
-	color: #fff;
-	padding: 10px;
-	font-size: 1.1rem;
+  background-color: #888;
+  color: #fff;
+  padding: 10px;
+  font-size: 1.1rem;
 }
 
 .footer a {
-	text-decoration: none;
-	color: #00a8ff;
+  text-decoration: none;
+  color: #00a8ff;
 }
